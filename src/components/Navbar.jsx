@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 const Navbar = () => {
-  const [isNightMode, setIsNightMode] = useState(false);
+  const [isNightMode, setIsNightMode] = useState(true);
 
   function handleNightMode() {
     setIsNightMode(!isNightMode);
@@ -12,7 +12,9 @@ const Navbar = () => {
     <>
       <nav
         className={
-          "bg-gray-900 flex py-10 mb-12  justify-between items-center rounded-lg p-8"
+          `${
+            isNightMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
+          } flex py-10 mb-12  justify-between items-center` + " rounded-lg p-8"
         }
       >
         <div className="flex justify-between items-center">
@@ -28,7 +30,7 @@ const Navbar = () => {
 
         <ul className="flex items-center">
           <li>
-            {isNightMode ? (
+            {/* {isNightMode ? (
               <BsFillSunFill
                 className="cursor-pointer text-2xl"
                 onClick={handleNightMode}
@@ -38,7 +40,7 @@ const Navbar = () => {
                 className="cursor-pointer text-2xl"
                 onClick={handleNightMode}
               />
-            )}
+            )} */}
           </li>
           <li>
             <a
