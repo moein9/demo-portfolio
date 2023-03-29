@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${
-          isNightMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
-        } flex py-10 mb-12  justify-between items-center` +" rounded-lg p-8"}
+        className={
+          "bg-gray-900 flex py-10 mb-12  justify-between items-center rounded-lg p-8"
+        }
       >
         <div className="flex justify-between items-center">
           <img
