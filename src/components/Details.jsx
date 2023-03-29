@@ -18,21 +18,24 @@ const PortfolioDetail = () => {
             <div className="h-3 w-3 rounded-full bg-green-500"></div>
           </div>
           <div className="text-green-500">
-            <span>${">"} whoami</span>
+            <span className="font-space">${">"} whoami</span>
             <br />
-            <Typewriter
-              options={{
-                strings: ["Moein Abas"].concat(whoAmI),
-                autoStart: true,
-                loop: true,
-              }}
-            />
+            <span className="font-space">
+              <Typewriter
+                options={{
+                  strings: ["Moein Abas"].concat(whoAmI),
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+
             <br />
           </div>
         </div>
       </div>
       <br />
-      <br/>
+      <br />
       <div className="text-3xl font-bold mb-8">About Me</div>
       <div className="bg-white shadow-lg rounded-lg px-8 py-10 ">
         <div className="text-gray-700 text-lg font-semibold leading-tight mb-6">
